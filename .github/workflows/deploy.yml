@@ -1,0 +1,46 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy
+    timeout-minutes: 10
+
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Gleam
+        uses: erlef/setup-beam@v1
+        with:
+          otp-version: "27.1.2"
+          gleam-version: "1.6.1"
+          rebar3-version: "3"
+
+      - name: Build
+        run: |
+          mkdir -p dist
+          gleam run -m lustre/dev build --minify --outdir=dist
+          cp dist/app.min.mjs dist/app.${{ github.sha }}.mjs
+          cp priv/static/app.css dist/app.${{ github.sha }}.css
+          cp index.html dist
+          sed -i 's|href="/priv/static/app.css"|href="/racs-orl-interview-questions/app.${{ github.sha }}.css"|g' dist/index.html
+          sed -i 's|src="/priv/static/app.mjs"|src="/racs-orl-interview-questions/app.${{ github.sha }}.mjs"|g' dist/index.html
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist

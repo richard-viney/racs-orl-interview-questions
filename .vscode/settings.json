@@ -1,0 +1,11 @@
+{
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+
+  "cSpell.enabledFileTypes": { "gleam": true },
+  "cSpell.words": ["Māori"],
+
+  "files.exclude": {
+    "**/build/": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+      "github.vscode-github-actions",
+      "gleam.gleam",
+      "streetsidesoftware.code-spell-checker",
+      "tamasfe.even-better-toml",
+    ]
+  }
+  

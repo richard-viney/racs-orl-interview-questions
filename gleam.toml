@@ -1,0 +1,14 @@
+name = "app"
+version = "1.0.0"
+gleam = ">= 1.6.0"
+target = "javascript"
+license = "MIT"
+
+[dependencies]
+gleam_stdlib = ">= 0.43.0 and < 2.0.0"
+lustre = ">= 4.6.1 and < 5.0.0"
+commonmark = ">= 0.1.8 and < 1.0.0"
+
+[dev-dependencies]
+gleeunit = ">= 1.2.0 and < 2.0.0"
+lustre_dev_tools = ">= 1.6.0 and < 2.0.0"
