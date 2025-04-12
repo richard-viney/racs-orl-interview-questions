@@ -15,6 +15,7 @@ pub type QuestionTag {
   Year2021
   Year2022
   Year2023
+  Year2024
 }
 
 pub fn all() -> List(QuestionTag) {
@@ -35,6 +36,7 @@ pub fn all() -> List(QuestionTag) {
     Year2021,
     Year2022,
     Year2023,
+    Year2024,
   ]
 }
 
@@ -57,5 +59,6 @@ pub fn to_string(tag: QuestionTag) -> String {
     Year2021 -> "2021"
     Year2022 -> "2022"
     Year2023 -> "2023"
+    Year2024 -> "2024"
   }
 }

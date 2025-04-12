@@ -3,7 +3,7 @@ import app/data/question_tag.{
   CollaborationAndTeamwork, Communication, CulturalCompetenceAndSafety,
   HealthAdvocacy, JudgementAndClinicalDecisionMaking, LeadershipAndManagement,
   MedicalExpertise, Professionalism, ScholarshipAndTeaching, TechnicalExpertise,
-  Year2018, Year2019, Year2020, Year2021, Year2022, Year2023,
+  Year2018, Year2019, Year2020, Year2021, Year2022, Year2023, Year2024,
 }
 
 pub const all = [
@@ -651,6 +651,129 @@ cause ototoxicity. The parents are distraught and requesting ear suctioning.
       JudgementAndClinicalDecisionMaking,
       Communication,
       Professionalism,
+    ],
+  ),
+  Question(
+    content: "
+You want to assess the outcomes between bilateral neck dissections and neck
+dissection and radiotherapy in patients with tongue SCC and cervical metastases.
+
+1. How you would approach initial planning?
+2. How and when do you involve Māori?
+3. Are there any issues with blinding, delivering intervention and
+   randomisation?
+4. A registrar colleague tells you that you don't need consent from patients, is
+   this true? If not, is there any situation when it is?
+",
+    tags: [
+      Year2024,
+      HealthAdvocacy,
+      CulturalCompetenceAndSafety,
+      ScholarshipAndTeaching,
+    ],
+  ),
+  Question(
+    content: "
+Your colleague is planning a Ear Health Initiative for Māori children, and you
+have been asked to help out.
+
+1. What do you expect seniors to have done before to prepare for the initiative?
+2. What skills can you bring to help?
+3. What will be the main challenges?
+4. How will you expand out this service?
+",
+    tags: [
+      Year2024,
+      CulturalCompetenceAndSafety,
+      ScholarshipAndTeaching,
+      Professionalism,
+      HealthAdvocacy,
+    ],
+  ),
+  Question(
+    content: "
+You are a consultant scrubbed in with registrar on a morning list. You did an
+uncomplicated tonsillectomy and then doing a pleomorphic adenoma superficial
+parotidectomy. This has been more technically challenging, anaesthetics has
+taken more time than anticipated as the patient has many comorbidities. You are
+running late in theatre and will finish around 12:45pm. The afternoon list needs
+to start by 12:30pm. There are no anaesthetic techs after 4:30pm.
+
+1. What are the issues?
+2. What are the options?
+3. Could this be preventable in the future?
+",
+    tags: [
+      Year2024,
+      CollaborationAndTeamwork,
+      Communication,
+      LeadershipAndManagement,
+      TechnicalExpertise,
+    ],
+  ),
+  Question(
+    content: "
+A 12-year-old Pasifika boy comes to clinic with his auntie with chronically
+discharging ears. You suspect cholesteatoma, request CT scan. They fail to
+attend CT scan.
+
+A few months later they present to ED with acute post-auricular swelling and you
+suspect mastoiditis. Mum is upset.
+
+1. What elements of history and exam would you try to elicit?
+2. What investigations would you request?
+3. What are the treatment options?
+4. What are some issues that can arise when treating Pasifika patients and how
+   would you approach any cultural issues?
+",
+    tags: [
+      Year2024,
+      Communication,
+      CulturalCompetenceAndSafety,
+      HealthAdvocacy,
+      JudgementAndClinicalDecisionMaking,
+      MedicalExpertise,
+    ],
+  ),
+  Question(
+    content: "
+There is a shortage of rural ORLHNS surgeons in Aotearoa New Zealand. You are a
+new consultant.
+
+1. How will you prepare for rural practice?
+2. What are systematic barriers to rural practice?
+3. Can you suggest some innovations to increase rural ORL surgeons?
+",
+    tags: [
+      Year2024,
+      HealthAdvocacy,
+      CollaborationAndTeamwork,
+      LeadershipAndManagement,
+      Professionalism,
+    ],
+  ),
+  Question(
+    content: "
+You are a non-training registrar. Three paediatric patients of equal priority
+need to go to theatre:
+
+- 6-year-old with epiglottitis, increased work of breathing.
+- 4-year-old with inhaled foreign body in the right main bronchus, reduced air
+  entry right main bronchus.
+- 8-year-old with mastoiditis, fluctuance in the post-auricular region.
+
+1. What are the factors and considerations that would help you prioritise?
+2. How would you prioritise - rank patients?
+3. How do you talk to the families to explain the situation?
+4. Are there measures we can take to prevent this?
+",
+    tags: [
+      Year2024,
+      CollaborationAndTeamwork,
+      Communication,
+      JudgementAndClinicalDecisionMaking,
+      LeadershipAndManagement,
+      MedicalExpertise,
     ],
   ),
 ]
